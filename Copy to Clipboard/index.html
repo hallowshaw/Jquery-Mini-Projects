@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <!-- FontAwesome CDN Link -->
     <script
       src="https://kit.fontawesome.com/369c1756a5.js"
@@ -17,16 +19,20 @@
   <body>
     <div class="container">
       <h1>copy to clipboard</h1>
-      <textarea id="textField" class="text-field">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum minima, est unde tempore sit ipsa quidem expedita adipisci nam quia itaque aliquam culpa, accusamus natus sequi earum omnis! Omnis?
-          </textarea
-      >
+      <!-- Textarea to hold the random text -->
+      <textarea id="textField" class="text-field"></textarea>
+      <!-- Button to copy the text to the clipboard -->
       <button class="copy-btn">Copy<i class="fas fa-clone"></i></button>
+      <!-- Button to generate new random text -->
+      <button class="generate-btn">
+        Generate Random Text<i class="fas fa-random"></i>
+      </button>
+      <!-- Span to show the "Copied!" message -->
       <span class="copied">Copied!</span>
     </div>
   </body>
   <!-- jQuery CDN Link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- jQuery File -->
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </html>
